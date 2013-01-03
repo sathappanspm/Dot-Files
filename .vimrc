@@ -19,6 +19,9 @@ vnoremap <Leader>s :sort<CR>
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
 
+au BufNewFile *.py so ~/.vim/skeleton/py
+"The time is modified after every write
+autocmd Bufwritepre,BufNewFile *.py exe "1," . 10 . "g/Last Modified:.*/s/Last Modified:.*/Last Modified:" .strftime("%c")
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 " nnoremap <C-L> :nohl<CR><C-L>
