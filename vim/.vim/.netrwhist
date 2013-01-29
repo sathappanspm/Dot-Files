@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/vicky/src/storylining/edu/vt'
+let g:netrw_dirhist_2='/home/vicky/src/storylining/edu/vt/embers'
+let g:netrw_dirhist_3='/home/vicky/src/storylining/edu/vt/embers/storyline'
+let g:netrw_dirhist_4='/home/vicky/git/edu/vt/embers/storyline'
+let g:netrw_dirhist_5='/home/vicky/workspace/CACI_integration/scratch'
+let g:netrw_dirhist_6='/home/vicky/DataSets'
+let g:netrw_dirhist_7='/home/vicky/DataSets/rss-content-enriched'

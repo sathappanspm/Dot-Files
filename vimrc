@@ -1,5 +1,4 @@
 syntax on
-
 set hidden
 set wildmenu
 set showcmd
@@ -21,13 +20,14 @@ vnoremap > >gv " better indentation
 
 au BufNewFile *.py so ~/.vim/skeleton/py
 "The time is modified after every write
-autocmd Bufwritepre,BufNewFile *.py exe "1," . 10 . "g/Last Modified:.*/s/Last Modified:.*/Last Modified:" .strftime("%c")
+"autocmd Bufwritepre,BufNewFile *.py exe "1," . 10 . "g/Last Modified:.*/s/Last Modified:.*/Last Modified:" .strftime("%c")
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 " nnoremap <C-L> :nohl<CR><C-L>
 set t_Co=256
- color wombat256mod
-"color twilight
+color xoria256
+" color wombat256mod
+" color twilight
 "color distinguished
 filetype indent plugin on
 let $Tlist_Ctags_Cmd='/usr/local/bin/ctags'
